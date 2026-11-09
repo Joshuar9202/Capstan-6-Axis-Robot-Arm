@@ -107,3 +107,27 @@ Got one of the motors kinda sorta working. It works with the simpleFOC example c
 
 **Total time spent: 2 hours 45 minutes**
 
+
+# November 8: FOC working
+
+Finally got FOC working on all 3 motors. Turns out the problem was the pin assignments, so I was using PA2 originally for one of the IN pins on the simpleFOC, but I guess that messes with serial communication on the nucleo, because when I changed that pin to PA15, it worked fine. When using PA2 it just printed gibberish. The string also tends to come loose because of the acceleration of the motor on startup, so I have to fix the rigging again. That's why in the video of the top motor the left side tensioner pulley doesn't move backward. I'll probably just set the rope on the pulleys and then add some quick fix tensioner. I should have used a string that had less elasticity than the one I'm using right now, so probably something like dyneema or kevlar, but it works fine if I just limit the speed. I'm pretty close to being able to ship, now that everything is working I just have to finalize the code and make the wiring diagram. Also the rigging on the base joint snapped...(I really should've used better string)
+The photo is the sensors actually sensing the motors on initialization and being able to start FOC successfully.
+
+<img width="588" height="1217" alt="image" src="https://github.com/user-attachments/assets/5fd57df0-5b6e-49fa-a408-b75de886eadb" />
+
+
+
+https://github.com/user-attachments/assets/1abbcc5f-d382-410a-86f1-7e8e93272c82
+
+
+
+https://github.com/user-attachments/assets/166a7aaf-343e-45d8-bc5e-37f805528850
+
+
+
+**Total time spent: 1 hour 59 minutes**
+
+
+
+
+
