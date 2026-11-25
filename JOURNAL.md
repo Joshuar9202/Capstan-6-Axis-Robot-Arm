@@ -127,6 +127,23 @@ https://github.com/user-attachments/assets/166a7aaf-343e-45d8-bc5e-37f805528850
 
 **Total time spent: 1 hour 59 minutes**
 
+#November 24: 2/3 Wrist Joints working!
+
+Finally got the motors to be coordinated enough to hold their FOC for more than 30 seconds. The bottom wrist motor still doesn't work on startup so I think I'll just have to find a way to bypass startup on the motor entirely. The other two motors though work great for once. They can control the pivoting of the entire wrist mechanism (pitch), and the output (roll). It also seems that under the hood of simpleFOC, it does not handle multiple rotations. I got it to work when the encoder was greater than 6.28 (its in radians) but after about 15 seconds, it would randomly hallucinate multiple rotations and jump to something like 24 on the encoder value for some reason. I got past this by just avoiding the issue entirely, I'm just going to keep the rotations of the motor from 3-6, I didn't need that many rotations anyways. Thats the hard part though, I think I can get it done this week since I have a break from school again. 
+
+
+<img width="900" height="914" alt="image" src="https://github.com/user-attachments/assets/8d04b72f-be44-418c-94d3-db9d054053db" />
+
+
+
+https://github.com/user-attachments/assets/f76d259e-cca8-4439-b38d-a29c8356defa
+
+
+https://github.com/user-attachments/assets/d1159be4-3279-4785-ac05-504f4a913dcc
+
+
+
+**Total time spent: 5 hours 16 minutes**
 
 
 
